@@ -1,9 +1,10 @@
 {
   "name": "82utils",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "rm -rf dist && tsc",
     "test": "jest --maxWorker=1 --forceExit"
   },
   "author": "gkkl",
