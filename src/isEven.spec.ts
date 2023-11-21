@@ -1,4 +1,4 @@
-import { isEven } from './is_even';
+import { isEven } from './isEven';
 
 describe('isEven', () => {
   it('should return true when number is even', () => {
