@@ -1,1 +1,1 @@
-export * from './is_cell_phone';
+export * from './isValidCellPhone';

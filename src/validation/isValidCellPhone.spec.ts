@@ -1,4 +1,4 @@
-import { isValidCellPhone } from './is_cell_phone';
+import { isValidCellPhone } from './isValidCellPhone';
 
 describe('isValidCellPhone', () => {
   it('should return true when number is valid', () => {
