@@ -1,1 +1,2 @@
-export * from './pick-random-element';
+export * from './pickRandomElement';
+export * from './range';

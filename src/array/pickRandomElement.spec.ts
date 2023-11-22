@@ -1,4 +1,4 @@
-import {pickRandomElement} from "./pick-random-element";
+import {pickRandomElement} from "./pickRandomElement";
 
 describe('pickRandomElement', () => {
   it('should return a random element from the array', () => {
