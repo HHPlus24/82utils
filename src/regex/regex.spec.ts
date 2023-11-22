@@ -9,7 +9,7 @@ describe('regexBuilder', () => {
   });
 
 
-  it('should match a valid number patteren', () => {
+  it('should match a valid number pattern', () => {
     regexBuilder.add({ type: 'number', count: 2 });
 
     const testString = '12';
@@ -71,7 +71,7 @@ describe('regexBuilder', () => {
     expect(result).toBeFalsy;
   })
 
-  it('should not use nagative number', () => {
+  it('should not use negative number', () => {
     regexBuilder.add({ type: 'number', count: -2 });
 
     const testString = '12';
