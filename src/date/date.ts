@@ -98,7 +98,7 @@ export class Date82{
                 currentDate.setMonth(currentDate.getMonth() + 1);
             }
         }
-        console.log(units)
+
         return units;
     }
 }
