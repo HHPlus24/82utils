@@ -86,19 +86,7 @@ export class Date82{
         let currentDate = new Date(this.date);
 
         while (currentDate <= endDate) {
-            let value;
-            if (unit === 'week') {
-                value = {
-                    start: new Date(currentDate),
-                    end: new Date(currentDate.setDate(currentDate.getDate() + 6)),
-                };
-            } else if (unit === 'day') {
-                value = new Date(currentDate);
-            } else if (unit === 'month') {
-                value = { year: currentDate.getFullYear(), month: currentDate.getMonth() + 1 };
-            } else {
-                throw new Error('Invalid unit. Use "week", "day", or "month".');
-            }
+            let value = new Date(currentDate);
 
             units.push(value);
 
@@ -110,7 +98,7 @@ export class Date82{
                 currentDate.setMonth(currentDate.getMonth() + 1);
             }
         }
-
+        console.log(units)
         return units;
     }
 }
