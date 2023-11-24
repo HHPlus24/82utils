@@ -1,4 +1,4 @@
-import { formatCallNum } from './formatCallNum';
+import { formatCallNum } from './formatCallNum.js';
 
 describe('formatCallNum', () => {
   it('should convert 15881234 to 1588-1234', () => {

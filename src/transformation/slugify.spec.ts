@@ -1,4 +1,4 @@
-import { slugify } from './slugify';
+import { slugify } from './slugify.js';
 
 describe('slugify', () => {
   it('should trim leading and trailing spaces', () => {

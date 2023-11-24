@@ -1,4 +1,4 @@
-import { msToHMS } from './msToHMS';
+import { msToHMS } from './msToHMS.js';
 
 describe('msToHMS', () => {
   it('should return 00:00:00 for 0', () => {

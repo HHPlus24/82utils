@@ -1,4 +1,4 @@
-import RegexBuilder from './regex';
+import RegexBuilder from './regex.js';
 
 describe('regexBuilder', () => {
   let regexBuilder: RegexBuilder;

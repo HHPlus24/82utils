@@ -1,4 +1,4 @@
-import { busyWait, jitterBusyWait, jitterSleep, wait } from './etc';
+import { busyWait, jitterBusyWait, jitterSleep, wait } from './etc.js';
 
 describe("etc test", () => {
   it('test busyWait functionality', async () => {
@@ -33,7 +33,8 @@ describe("etc test", () => {
     const endTime = Date.now();
     const elapsedTime = endTime - startTime;
 
-    expect(elapsedTime).toBeGreaterThanOrEqual(1000);
+    expect(elapsedTime).toBeGreaterThanOrEqual(600);
+    expect(elapsedTime).toBeLessThan(1400);
   })
 
   it('sholud not wait for the specified time', async () => {
@@ -56,7 +57,8 @@ describe("etc test", () => {
     const endTime = Date.now();
     const elapsedTime = endTime - startTime;
 
-    expect(elapsedTime).toBeGreaterThanOrEqual(sleepTime);
+    expect(elapsedTime).toBeGreaterThanOrEqual(600);
+    expect(elapsedTime).toBeLessThan(1400);
   })
 
   it('should not wait for sleep for a specified time.', async () => {

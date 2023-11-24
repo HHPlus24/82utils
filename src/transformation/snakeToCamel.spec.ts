@@ -1,4 +1,4 @@
-import { snakeToCamel } from './snakeToCamel';
+import { snakeToCamel } from './snakeToCamel.js';
 
 describe('snakeToCamel', () => {
   it('should convert snake case to camel case', () => {

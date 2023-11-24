@@ -1,4 +1,4 @@
-import {pluck} from "./pluck";
+import {pluck} from "./pluck.js";
 
 export interface Person {
   id: number;

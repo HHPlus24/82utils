@@ -1,4 +1,4 @@
-import { calculateDistance } from './calculateDistance';
+import { calculateDistance } from './calculateDistance.js';
 
 describe('calculateDistance', () => {
   it('should return 0 when the same point is given', () => {

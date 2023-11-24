@@ -1,4 +1,4 @@
-import { isValidEmail } from './isValidEmail';
+import { isValidEmail } from './isValidEmail.js';
 
 describe('isValidEmail', () => {
   it('should return true when email is valid', () => {

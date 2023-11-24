@@ -1,4 +1,4 @@
-import { degreeToRadian } from './degreeToRadian';
+import { degreeToRadian } from './degreeToRadian.js';
 
 describe('degreeToRadian', () => {
   it('should convert 0 degrees to 0 radians', () => {

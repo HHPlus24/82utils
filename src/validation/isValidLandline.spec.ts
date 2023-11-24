@@ -1,4 +1,4 @@
-import { isValidLandline } from './isValidLandline';
+import { isValidLandline } from './isValidLandline.js';
 
 describe('isValidLandline', () => {
   it('should return false if the number is not a landline', () => {

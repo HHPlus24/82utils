@@ -1,4 +1,4 @@
-import {range} from "./range";
+import {range} from "./range.js";
 
 describe('range', () => {
   it('range(1, 5, 1) should return [1, 2, 3, 4]', () => {

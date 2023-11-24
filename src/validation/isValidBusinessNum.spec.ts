@@ -1,4 +1,4 @@
-import { isValidBusinessNum } from './isValidBusinessNum';
+import { isValidBusinessNum } from './isValidBusinessNum.js';
 
 describe('isValidBusinessNum', () => {
   it('should return false if the number is not a business number', () => {

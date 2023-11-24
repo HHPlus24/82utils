@@ -1,4 +1,4 @@
-import {pick} from "./pick";
+import {pick} from "./pick.js";
 
 describe('pick', () => {
   it('should create an object composed of the picked `object` properties', () => {

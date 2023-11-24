@@ -1,4 +1,4 @@
-import { hmsToMs } from './hmsToMs';
+import { hmsToMs } from './hmsToMs.js';
 
 describe('hmsToMs', () => {
   it('should raise an error if the input is not valid', () => {

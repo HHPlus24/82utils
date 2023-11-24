@@ -1,4 +1,4 @@
-import { phoneNumberToString, numberWithCommas, removeCommasFromNumber } from './format';
+import { phoneNumberToString, numberWithCommas, removeCommasFromNumber } from './format.js';
 
 describe('format', () => {
   it('phoneNumberToString', () => {

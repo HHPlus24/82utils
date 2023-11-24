@@ -1,4 +1,4 @@
-import {truncate} from "./truncate";
+import { truncate } from './truncate.js';
 
 describe('truncate', () => {
   it('truncates a string to a given length', () => {
@@ -13,7 +13,7 @@ describe('truncate', () => {
     const expected = 'hi-diddly-ho there, neighborino';
 
     const actual = truncate('hi-diddly-ho there, neighborino', {
-      length: 100
+      length: 100,
     });
 
     expect(actual).toEqual(expected);
@@ -23,8 +23,8 @@ describe('truncate', () => {
     const expected = 'hi-diddly-ho there, neig [...]';
 
     const actual = truncate('hi-diddly-ho there, neighborino', {
-      'omission': ' [...]'
-    })
+      omission: ' [...]',
+    });
 
     expect(actual).toEqual(expected);
   });
