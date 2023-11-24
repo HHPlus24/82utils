@@ -1,13 +1,13 @@
 import { toFormat, toKSTString, add, sub, diff, period } from './date.js';
 describe('date', () => {
   it('toFormat - ', () => {
-    const date: Date = new Date();
+    const date: Date = new Date('2023-11-24');
     const result = '2023-11-24';
     expect(toFormat(date, '-')).toBe(result);
   });
 
   it('toFormat / ', () => {
-    const date: Date = new Date();
+    const date: Date = new Date('2023-11-24');
     const result = '2023/11/24';
     expect(toFormat(date, '/')).toBe(result);
   });

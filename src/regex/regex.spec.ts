@@ -8,6 +8,11 @@ describe('regexBuilder', () => {
     regexBuilder = new RegexBuilder();
   });
 
+  it('setRegex should set a regex', () => {
+    regexBuilder.setRegex('test');
+    expect(regexBuilder['_regex']).toBe('test');
+  });
+
   it('should match a valid number pattern', () => {
     regexBuilder.add({ type: 'number', count: 2 });
 

@@ -1,4 +1,4 @@
-import {padEnd, padStart} from "./pad.js";
+import { padEnd, padStart } from './pad.js';
 
 describe('padStart', () => {
   it('should pad string on the left side if it is shorter than length', () => {
