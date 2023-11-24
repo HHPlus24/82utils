@@ -74,6 +74,8 @@ isValidBusinessNum(businessNum)
   const phoneNumber: string = '01012344444';
   phoneNumberToString(phoneNumber);
 ```
+## mileStone
+This [releaseNote](./mileston.md) is function that will be added in the future for each version.
 
 ## Contributin
 Learn about contrigution [Contribution](./CONTRIBUTING.md)
