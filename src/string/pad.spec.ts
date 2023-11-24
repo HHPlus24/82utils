@@ -28,7 +28,7 @@ describe('padEnd', () => {
   });
 
   it('should truncate pad string if it exceeds length', () => {
-    expect(padEnd('abc', 7, 'foo')).toEqual('abcfoo');
+    expect(padEnd('abc', 7, 'foo')).toEqual('abcfoof');
   });
 
   it('should return the original string if length is less than or equal to string.length', () => {
