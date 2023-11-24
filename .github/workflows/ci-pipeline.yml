@@ -4,10 +4,16 @@ on:
   push:
     branches:
       - develop
+  pull_request:
+    branches:
+      - develop
+    types:
+      - closed
 
 permissions:
   id-token: write
   contents: read
+  pull-requests: write
 
 env:
   SHA: ${{ github.sha }}
@@ -41,8 +47,11 @@ jobs:
       - name: Run lint
         run: npm run lint
 
-      - name: Run tests
-        run: npm run test
+      - name: Comment with Test Coverage
+        uses: dkershner6/jest-coverage-commenter-action@v1
+        with:
+          github_token: "${{ secrets.GITHUB_TOKEN }}"
+          test_command: "npm run test:cov"
 
       # - name: Notify Slack on Failure
       #   if: failure()
