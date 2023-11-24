@@ -3,11 +3,7 @@
   "version": "0.1.21",
   "description": "",
   "sideEffects": false,
-  "files": [
-    "dist",
-    "CHANGELOG.md",
-    "CONTRIBUTING.md"
-  ],
+  "files": ["dist", "CHANGELOG.md", "CONTRIBUTING.md"],
   "type": "module",
   "module": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -21,7 +17,8 @@
     "build": "rm -rf dist && tsc",
     "lint": "eslint --fix --ext .ts src/",
     "test": "jest",
-    "test:cov": "jest --coverage"
+    "test:cov": "jest --coverage",
+    "release": "shipjs prepare"
   },
   "repository": {
     "type": "git",
@@ -29,14 +26,7 @@
   },
   "author": "gkkl",
   "license": "MIT",
-  "keywords": [
-    "82utils",
-    "util",
-    "utils",
-    "utility",
-    "tool",
-    "tools"
-  ],
+  "keywords": ["82utils", "util", "utils", "utility", "tool", "tools"],
   "devDependencies": {
     "@types/jest": "^29.5.8",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
@@ -46,6 +36,7 @@
     "eslint-plugin-prettier": "^5.0.1",
     "jest": "^29.7.0",
     "prettier": "^3.1.0",
+    "shipjs": "0.26.3",
     "ts-jest": "^29.1.1"
   }
 }
