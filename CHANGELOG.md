@@ -1,3 +1,13 @@
+# [0.2.0](https://github.com/HHPlus24/82utils/compare/v0.1.0...v0.2.0) (2023-11-24)
+
+Initial Release
+
+### Features
+
+* **release:** add shipjs ([7229443](https://github.com/HHPlus24/82utils/commit/7229443c54712fc7905598b5c2b82389943b9131))
+
+
+
 # Change Logs
 
 ## [0.1.0](https://github.com/HHPlus24/82utils/tree/v0.1.0) (2023-11-22)
