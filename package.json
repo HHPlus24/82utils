@@ -1,6 +1,6 @@
 {
   "name": "82utils",
-  "version": "0.1.20",
+  "version": "0.1.21",
   "description": "",
   "sideEffects": false,
   "files": [
@@ -20,7 +20,8 @@
   "scripts": {
     "build": "rm -rf dist && tsc",
     "lint": "eslint --ext .ts src",
-    "test": "jest"
+    "test": "jest",
+    "test:cov": "jest --coverage"
   },
   "repository": {
     "type": "git",
