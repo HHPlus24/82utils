@@ -16,19 +16,19 @@ It's good for someone like this to use.
 
 ## Example
 ```js
-npm install 82utils;
+npm install 82utils
 ```
 ```
 import 82utils from '82utils'
 ```
 ## FeatureList
-- Date / Time
-- Create a random string
-- validation Tool
-- Regex Builder
-- Format
-- Unit Transformation
-- etc
+- [DATE / TIME](docs/dateTime.md)
+- [RandomString](docs/randomString.md)
+- [ValidationTool](docs/validation.md)
+- [Regex Builder](docs/regexBuilder.md)
+- [Format](docs/format.md)
+- [Unit Transformation](docs/unitTramsformation.md)
+- [etc](docs/etc.md)
 ---
 ## Licence
 MIT
