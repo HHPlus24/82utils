@@ -2,7 +2,7 @@ import { degreeToRadian } from './degreeToRadian.js';
 
 export const calculateDistance = (
   pt1: { latitude: number; longitude: number },
-  pt2: { latitude: number; longitude: number }
+  pt2: { latitude: number; longitude: number },
 ): number => {
   const RADIUS_OF_EARTH: number = 6371;
 

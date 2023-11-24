@@ -1,4 +1,4 @@
-import {range} from "./range.js";
+import { range } from './range.js';
 
 describe('range', () => {
   it('range(1, 5, 1) should return [1, 2, 3, 4]', () => {
@@ -33,7 +33,7 @@ describe('range', () => {
     expect(range(0, -6, -2)).toEqual([0, -2, -4]);
   });
 
-  it('range(5) should return [0, 1, 2, 3, 4]', () =>{
+  it('range(5) should return [0, 1, 2, 3, 4]', () => {
     expect(range(5)).toEqual([0, 1, 2, 3, 4]);
   });
 

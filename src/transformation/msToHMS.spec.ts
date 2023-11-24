@@ -17,4 +17,3 @@ describe('msToHMS', () => {
     expect(msToHMS(3600000)).toBe('01:00:00');
   });
 });
-

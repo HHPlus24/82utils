@@ -11,7 +11,7 @@ describe('slugify', () => {
     const text = '-slugtextexample-';
     const slug = 'slugtextexample';
     expect(slugify(text)).toBe(slug);
-  })
+  });
 
   it('should convert string to lowercase', () => {
     const text = 'SlugTextExample';
@@ -23,23 +23,23 @@ describe('slugify', () => {
     const text = '$lugt*xtex@mp!e';
     const slug = 'lugtxtexmpe';
     expect(slugify(text)).toBe(slug);
-  })
+  });
 
   it('should replace underscores with dashes', () => {
     const text = 'slug_text_example';
     const slug = 'slug-text-example';
     expect(slugify(text)).toBe(slug);
-  })
+  });
 
   it('should replace spaces with dashes', () => {
     const text = 'slug text example';
     const slug = 'slug-text-example';
     expect(slugify(text)).toBe(slug);
-  })
+  });
 
   it('should replace multiple dashes with single dash', () => {
     const text = 'slug---text--example';
     const slug = 'slug-text-example';
     expect(slugify(text)).toBe(slug);
   });
- })
+});

@@ -27,10 +27,7 @@ export const wait = (sec: number): Promise<void> => {
  * @param amplitude - 0 < amplitude < 1
  * @throws {Error} If the amplitude is not between 0 and 1.
  */
-export const jitterBusyWait = (
-  milliseconds: number,
-  amplitude: number = 0.3
-): void => {
+export const jitterBusyWait = (milliseconds: number, amplitude: number = 0.3): void => {
   if (amplitude < 0 || amplitude > 1) {
     throw new Error('Amplitude must be between 0 and 1');
   }
@@ -39,8 +36,7 @@ export const jitterBusyWait = (
   const maxJitter = 1 + amplitude;
 
   const jitterRange = milliseconds * (maxJitter - minJitter);
-  const jitterSec =
-    milliseconds + Math.random() * jitterRange - jitterRange / 2;
+  const jitterSec = milliseconds + Math.random() * jitterRange - jitterRange / 2;
 
   let start = Date.now(),
     now = start;
@@ -57,10 +53,7 @@ export const jitterBusyWait = (
  * @throws {Error} If the amplitude is not between 0 and 1.
  * @return
  */
-export const jitterSleep = async (
-  milliseconds: number,
-  amplitude: number = 0.3
-): Promise<void> => {
+export const jitterSleep = async (milliseconds: number, amplitude: number = 0.3): Promise<void> => {
   if (amplitude < 0 || amplitude > 1) {
     throw new Error('Amplitude must be between 0 and 1');
   }
@@ -73,4 +66,3 @@ export const jitterSleep = async (
 
   return new Promise((resolve) => setTimeout(resolve, jitter));
 };
-

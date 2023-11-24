@@ -1,19 +1,19 @@
 interface IRegexAdd {
   type: 'number' | 'language';
   count: number;
-  lang? : 'ko' | 'en' 
+  lang?: 'ko' | 'en';
 }
 
 class RegexBuilder {
-  private _regex : string = '';
+  private _regex: string = '';
 
   setRegex(regex: string): void {
     this._regex = regex;
   }
 
-  add({type, count, lang}: IRegexAdd): RegexBuilder {
+  add({ type, count, lang }: IRegexAdd): RegexBuilder {
     if (type === 'number') {
-      this._regex += `[0-9]{${count}}`
+      this._regex += `[0-9]{${count}}`;
     } else if (type === 'language') {
       if (lang === 'ko') {
         this._regex += `[가-힣]{${count}}`;
@@ -21,7 +21,7 @@ class RegexBuilder {
         this._regex += `[A-Za-z]{${count}}`;
       }
     }
-    
+
     return this;
   }
 

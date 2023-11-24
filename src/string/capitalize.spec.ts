@@ -1,7 +1,7 @@
-import {capitalize} from "./capitalize.js";
+import { capitalize } from './capitalize.js';
 
 describe('capitalize', () => {
-  it('should capitalize the first letter of a string', ()=> {
+  it('should capitalize the first letter of a string', () => {
     expect(capitalize('hello, world!')).toBe('Hello, world!');
   });
 

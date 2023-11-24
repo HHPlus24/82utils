@@ -20,5 +20,5 @@ export const numberWithCommas = (number: number): string => {
 };
 
 export const removeCommasFromNumber = (string: string): number => {
-  return parseInt(string.replace(/,/g, ''))
+  return parseInt(string.replace(/,/g, ''));
 };

@@ -1,4 +1,4 @@
-import {pluck} from "./pluck.js";
+import { pluck } from './pluck.js';
 
 export interface Person {
   id: number;
@@ -7,7 +7,7 @@ export interface Person {
 }
 
 describe('pluck', () => {
-  it('should pluck the value of a property from each item in the array', ()=> {
+  it('should pluck the value of a property from each item in the array', () => {
     const items: Person[] = [
       { id: 1, name: 'Bob', age: 20 },
       { id: 2, name: 'Alice', age: 30 },
@@ -25,5 +25,5 @@ describe('pluck', () => {
     const ids = pluck(items, 'id');
 
     expect(ids).toEqual([]);
-  })
+  });
 });

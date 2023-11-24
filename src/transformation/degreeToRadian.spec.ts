@@ -3,7 +3,7 @@ import { degreeToRadian } from './degreeToRadian.js';
 describe('degreeToRadian', () => {
   it('should convert 0 degrees to 0 radians', () => {
     expect(degreeToRadian(0)).toBe(0);
-  })
+  });
 
   it('should convert 90 degrees to PI/2 radians', () => {
     expect(degreeToRadian(90)).toBe(Math.PI / 2);
