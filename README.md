@@ -18,22 +18,16 @@ It's good for someone like this to use.
 ---
 
 ## Example
-<<<<<<< HEAD
 ```js
 npm install 82utils
-=======
-
-```bash
-npm install 82utils;
->>>>>>> main
 ```
 
 ```js
 import 82utils from '82utils'
 ```
 
-## FeatureList
-<<<<<<< HEAD
+## Feature List
+- [Array](docs/array.md)
 - [DATE / TIME](docs/dateTime.md)
 - [RandomString](docs/randomString.md)
 - [ValidationTool](docs/validation.md)
@@ -41,19 +35,10 @@ import 82utils from '82utils'
 - [Format](docs/format.md)
 - [Unit Transformation](docs/unitTramsformation.md)
 - [etc](docs/etc.md)
-=======
-
-- Date / Time
-- Create a random string
-- validation Tool
-- Regex Builder
-- Format
-- Unit Transformation
-- etc
-
->>>>>>> main
 ---
 
 ## Licence
-
 MIT
+
+## Contact
+eagle5424228@gmail.com

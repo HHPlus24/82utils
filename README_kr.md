@@ -1,5 +1,4 @@
 # 82utils
-
 ---
 
 ## 개요
@@ -15,33 +14,27 @@
 - 다양한 validation 기능이 필요할때
 - 필요한 정규표현식을 만들어야 할때
 - 시간 / 날짜 관련 함수들과 다양한 Format이 필요 할때
-
 ---
 
 ## Example
-
 ```bash
-npm install 82utils;
+npm install 82utils
 ```
-
-```js
-import 82utils from '82utils'
-```
-
 ---
 
-## FeatureList
-
-- 날짜 / 시간
-- 랜덤 문자열 만들기
-- validation Tool
-- Regex Builder
-- Format
-- 단위 변환
-- 기타
-
+## Feature List
+- [Array](docs/array.md)
+- [DATE / TIME](docs/dateTime.md)
+- [RandomString](docs/randomString.md)
+- [ValidationTool](docs/validation.md)
+- [Regex Builder](docs/regexBuilder.md)
+- [Format](docs/format.md)
+- [Unit Transformation](docs/unitTramsformation.md)
+- [etc](docs/etc.md)
 ---
 
 ## Licence
-
 MIT
+
+## Contact
+eagle5424228@gmail.com
