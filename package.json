@@ -1,9 +1,13 @@
 {
   "name": "82utils",
-  "version": "0.1.21",
+  "version": "0.2.0",
   "description": "",
   "sideEffects": false,
-  "files": ["dist", "CHANGELOG.md", "CONTRIBUTING.md"],
+  "files": [
+    "dist",
+    "CHANGELOG.md",
+    "CONTRIBUTING.md"
+  ],
   "type": "module",
   "module": "./dist/index.js",
   "typings": "./dist/index.d.ts",
@@ -26,7 +30,14 @@
   },
   "author": "gkkl",
   "license": "MIT",
-  "keywords": ["82utils", "util", "utils", "utility", "tool", "tools"],
+  "keywords": [
+    "82utils",
+    "util",
+    "utils",
+    "utility",
+    "tool",
+    "tools"
+  ],
   "devDependencies": {
     "@types/jest": "^29.5.8",
     "@typescript-eslint/eslint-plugin": "^6.12.0",
