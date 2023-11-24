@@ -75,8 +75,7 @@ isValidBusinessNum(businessNum)
   phoneNumberToString(phoneNumber);
 ```
 ## mileStone
-[releaseNote](./mileston.md)
-It is a function that will be added in the future for each version.
+This [releaseNote](./mileston.md) is function that will be added in the future for each version.
 
 ## Contributin
 Learn about contrigution [Contribution](./CONTRIBUTING.md)
