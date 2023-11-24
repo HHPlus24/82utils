@@ -17,60 +17,136 @@ export function toKSTString(date: Date): string {
   return kstDate.toLocaleString('sv');
 }
 
-export function add(
-  date: Date,
-  option: { type: 'Y' | 'M' | 'D' | 'h' | 'm' | 's'; inc: number },
-): Date {
-  switch (option.type) {
-    case 'Y':
-      date.setFullYear(date.getFullYear() + option.inc);
-      break;
-    case 'M':
-      date.setMonth(date.getMonth() + option.inc);
-      break;
-    case 'D':
-      date.setDate(date.getDate() + option.inc);
-      break;
-    case 'h':
-      date.setHours(date.getHours() + option.inc);
-      break;
-    case 'm':
-      date.setMinutes(date.getMinutes() + option.inc);
-      break;
-    case 's':
-      date.setSeconds(date.getSeconds() + option.inc);
-      break;
-  }
-
-  return date;
+export function addMinute(date: Date): Date {
+  const newDate = new Date(date.getTime() + 60 * 1000);
+  return newDate;
 }
 
-export function sub(
-  date: Date,
-  option: { type: 'Y' | 'M' | 'D' | 'h' | 'm' | 's'; dec: number },
-): Date {
-  switch (option.type) {
-    case 'Y':
-      date.setFullYear(date.getFullYear() - option.dec);
-      break;
-    case 'M':
-      date.setMonth(date.getMonth() - option.dec);
-      break;
-    case 'D':
-      date.setDate(date.getDate() - option.dec);
-      break;
-    case 'h':
-      date.setHours(date.getHours() - option.dec);
-      break;
-    case 'm':
-      date.setMinutes(date.getMinutes() - option.dec);
-      break;
-    case 's':
-      date.setSeconds(date.getSeconds() - option.dec);
-      break;
-  }
+export function addMinutes(date: Date, minutes: number): Date {
+  const newDate = new Date(date.getTime() + minutes * 60 * 1000);
+  return newDate;
+}
 
-  return date;
+export function addHour(date: Date): Date {
+  const newDate = new Date(date.getTime() + 60 * 60 * 1000);
+  return newDate;
+}
+
+export function addHours(date: Date, hours: number): Date {
+  const newDate = new Date(date.getTime() + hours * 60 * 60 * 1000);
+  return newDate;
+}
+
+export function addDay(date: Date): Date {
+  const newDate = new Date(date.getTime() + 24 * 60 * 60 * 1000);
+  return newDate;
+}
+
+export function addDays(date: Date, days: number): Date {
+  const newDate = new Date(date.getTime() + days * 24 * 60 * 60 * 1000);
+  return newDate;
+}
+
+export function addMonth(date: Date): Date {
+  const newDate = new Date(date.getTime());
+  newDate.setMonth(newDate.getMonth() + 1);
+  return newDate;
+}
+
+export function addMonths(date: Date, months: number): Date {
+  const newDate = new Date(date.getTime());
+  newDate.setMonth(newDate.getMonth() + months);
+  return newDate;
+}
+
+export function addQuarter(date: Date): Date {
+  const newDate = new Date(date.getTime());
+  newDate.setMonth(newDate.getMonth() + 3);
+  return newDate;
+}
+
+export function addQuarters(date: Date, quarters: number): Date {
+  const newDate = new Date(date.getTime());
+  newDate.setMonth(newDate.getMonth() + quarters * 3);
+  return newDate;
+}
+
+export function addYear(date: Date): Date {
+  const newDate = new Date(date.getTime());
+  newDate.setFullYear(newDate.getFullYear() + 1);
+  return newDate;
+}
+
+export function addYears(date: Date, years: number): Date {
+  const newDate = new Date(date.getTime());
+  newDate.setFullYear(newDate.getFullYear() + years);
+  return newDate;
+}
+
+export function subMinute(date: Date): Date {
+  const newDate = new Date(date.getTime() - 60 * 1000);
+  return newDate;
+}
+
+export function subMinutes(date: Date, minutes: number): Date {
+  const newDate = new Date(date.getTime() - minutes * 60 * 1000);
+  return newDate;
+}
+
+export function subHour(date: Date): Date {
+  const newDate = new Date(date.getTime() - 60 * 60 * 1000);
+  return newDate;
+}
+
+export function subHours(date: Date, hours: number): Date {
+  const newDate = new Date(date.getTime() - hours * 60 * 60 * 1000);
+  return newDate;
+}
+
+export function subDay(date: Date): Date {
+  const newDate = new Date(date.getTime() - 24 * 60 * 60 * 1000);
+  return newDate;
+}
+
+export function subDays(date: Date, days: number): Date {
+  const newDate = new Date(date.getTime() - days * 24 * 60 * 60 * 1000);
+  return newDate;
+}
+
+export function subMonth(date: Date): Date {
+  const newDate = new Date(date.getTime());
+  newDate.setMonth(newDate.getMonth() - 1);
+  return newDate;
+}
+
+export function subMonths(date: Date, months: number): Date {
+  const newDate = new Date(date.getTime());
+  newDate.setMonth(newDate.getMonth() - months);
+  return newDate;
+}
+
+export function subQuarter(date: Date): Date {
+  const newDate = new Date(date.getTime());
+  newDate.setMonth(newDate.getMonth() - 3);
+  return newDate;
+}
+
+export function subQuarters(date: Date, quarters: number): Date {
+  const newDate = new Date(date.getTime());
+  newDate.setMonth(newDate.getMonth() - quarters * 3);
+  return newDate;
+}
+
+export function subYear(date: Date): Date {
+  const newDate = new Date(date.getTime());
+  newDate.setFullYear(newDate.getFullYear() - 1);
+  return newDate;
+}
+
+export function subYears(date: Date, years: number): Date {
+  const newDate = new Date(date.getTime());
+  newDate.setFullYear(newDate.getFullYear() - years);
+  return newDate;
 }
 
 export function diff(startDate: Date, endDate: Date): number {
