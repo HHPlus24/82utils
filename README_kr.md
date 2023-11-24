@@ -16,25 +16,68 @@
 - 시간 / 날짜 관련 함수들과 다양한 Format이 필요 할때
 ---
 
-## Example
-```bash
+## Feature List
+- [Array](src/array/array.md)
+- [DATE / TIME](src/date/dateTime.md)
+- [String](src/string//string.md)
+- [ValidationTool](src/validation/validation.md)
+- [Regex Builder](src/regex/regexBuilder.md)
+- [Format](src/format/format.md)
+- [Transformation](src/transformation/unitTramsformation.md)
+- [ETC](src/etc/etc.md)
+---
+
+## Installation
+```js
 npm install 82utils
 ```
----
 
-## Feature List
-- [Array](docs/array.md)
-- [DATE / TIME](docs/dateTime.md)
-- [RandomString](docs/randomString.md)
-- [ValidationTool](docs/validation.md)
-- [Regex Builder](docs/regexBuilder.md)
-- [Format](docs/format.md)
-- [Unit Transformation](docs/unitTramsformation.md)
-- [etc](docs/etc.md)
----
+## Useage
+
+### Validation
+- 사업자 등록 번호가 정확한 규격인지 판단 
+```js
+import validation from '82utils';
+
+const businessNum = '220-81-62517';
+isValidBusinessNum(businessNum)
+```
+
+### Date
+- 한국시간으로 변경
+```js
+  import date from '82utils';
+
+  const date: Date = new Date('2023-11-24');
+  toKSTString(date);
+```
+
+- 날짜와 날짜의 차이를 구합니다.
+```js
+  import date from '82utils';
+
+  const date = new Date('2023-11-30');
+  const resultDate = new Date('2023-11-20');
+  sub(date, { type: 'D', dec: 10});
+```
+
+### format
+- 핸드폰 번호를 일정한 규격에 맞게 만들어 줍니다.
+```js
+  import format from '82utils';
+  const phoneNumber: string = '01012344444';
+  phoneNumberToString(phoneNumber);
+```
+
+
+## Contributin
+컨트리뷰트 하는 방법 입니다. [Contribution](./CONTRIBUTING.md)
+
+다양한 사람들의 기여를 기다리고 있습니다.
 
 ## Licence
-MIT
+[MIT](./LICENSE)
 
 ## Contact
 eagle5424228@gmail.com
+

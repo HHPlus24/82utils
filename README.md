@@ -17,28 +17,65 @@ It's good for someone like this to use.
 
 ---
 
-## Example
+## Feature List
+- [Array](src/array/array.md)
+- [DATE / TIME](src/date/dateTime.md)
+- [String](src/string//string.md)
+- [ValidationTool](src/validation/validation.md)
+- [Regex Builder](src/regex/regexBuilder.md)
+- [Format](src/format/format.md)
+- [Transformation](src/transformation/unitTramsformation.md)
+- [ETC](src/etc/etc.md)
+---
+
+## Installation
 ```js
 npm install 82utils
 ```
 
+## Useage
+
+### Validation
+- It is determined whether it is a business registration number.
 ```js
-import 82utils from '82utils'
+import validation from '82utils';
+
+const businessNum = '220-81-62517';
+isValidBusinessNum(businessNum)
 ```
 
-## Feature List
-- [Array](docs/array.md)
-- [DATE / TIME](docs/dateTime.md)
-- [RandomString](docs/randomString.md)
-- [ValidationTool](docs/validation.md)
-- [Regex Builder](docs/regexBuilder.md)
-- [Format](docs/format.md)
-- [Unit Transformation](docs/unitTramsformation.md)
-- [etc](docs/etc.md)
----
+### Date
+- convert to KSTString
+```js
+  import date from '82utils';
+
+  const date: Date = new Date('2023-11-24');
+  toKSTString(date);
+```
+
+- Calculate how many days are left
+```js
+  import date from '82utils';
+
+  const date = new Date('2023-11-30');
+  const resultDate = new Date('2023-11-20');
+  sub(date, { type: 'D', dec: 10});
+```
+
+### format
+```js
+  import format from '82utils';
+  const phoneNumber: string = '01012344444';
+  phoneNumberToString(phoneNumber);
+```
+
+## Contributin
+Learn about contrigution [Contribution](./CONTRIBUTING.md)
+
+Waiting for various people's contribution!!!
 
 ## Licence
-MIT
+[MIT](./LICENSE)
 
 ## Contact
 eagle5424228@gmail.com
