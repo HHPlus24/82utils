@@ -4,11 +4,6 @@ on:
   push:
     branches:
       - develop
-  pull_request:
-    branches:
-      - develop
-    types:
-      - closed
 
 permissions:
   id-token: write
@@ -20,7 +15,7 @@ env:
 
 jobs:
   test:
-    name: test
+    name: ci-pipeline-push
     runs-on: ubuntu-22.04
 
     steps:
@@ -47,11 +42,8 @@ jobs:
       - name: Run lint
         run: npm run lint
 
-      - name: Comment with Test Coverage
-        uses: dkershner6/jest-coverage-commenter-action@v1
-        with:
-          github_token: "${{ secrets.GITHUB_TOKEN }}"
-          test_command: "npm run test:cov"
+      - name: Run test
+        run: npm run test
 
       # - name: Notify Slack on Failure
       #   if: failure()
