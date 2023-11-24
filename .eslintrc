@@ -11,8 +11,8 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
-  "plugins": ["@typescript-eslint", "plugin:@typescript-eslint/recommended", "prettier"],
+  "extends": ["eslint:recommended"],
+  "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
     "no-implicit-coercion": "error",
     "no-implicit-globals": "error",
@@ -42,6 +42,10 @@
       {
         "selector": "typeLike",
         "format": ["PascalCase"]
+      },
+      {
+        "selector": "import",
+        "format": ["camelCase", "PascalCase"]
       }
     ]
   }

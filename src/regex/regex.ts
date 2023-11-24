@@ -5,20 +5,20 @@ interface IRegexAdd {
 }
 
 class RegexBuilder {
-  private regex : string = '';
+  private _regex : string = '';
 
   setRegex(regex: string): void {
-    this.regex = regex;
+    this._regex = regex;
   }
 
   add({type, count, lang}: IRegexAdd): RegexBuilder {
     if (type === 'number') {
-      this.regex += `[0-9]{${count}}`
+      this._regex += `[0-9]{${count}}`
     } else if (type === 'language') {
       if (lang === 'ko') {
-        this.regex += `[가-힣]{${count}}`;
+        this._regex += `[가-힣]{${count}}`;
       } else if (lang === 'en') {
-        this.regex += `[A-Za-z]{${count}}`;
+        this._regex += `[A-Za-z]{${count}}`;
       }
     }
     
@@ -26,7 +26,7 @@ class RegexBuilder {
   }
 
   test(sampleString: string): boolean {
-    const regex = new RegExp(this.regex);
+    const regex = new RegExp(this._regex);
     return regex.test(sampleString);
   }
 }
