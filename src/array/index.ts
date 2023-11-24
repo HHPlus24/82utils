@@ -1,2 +1,2 @@
-export * from './pickRandomElement';
-export * from './range';
+export * from './pickRandomElement.js';
+export * from './range.js';

@@ -1,3 +1,3 @@
-export * from './truncate';
-export * from './pad';
-export * from './capitalize';
+export * from './truncate.js';
+export * from './pad.js';
+export * from './capitalize.js';

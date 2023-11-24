@@ -1,4 +1,4 @@
-import { degreeToRadian } from './degreeToRadian';
+import { degreeToRadian } from './degreeToRadian.js';
 
 export const calculateDistance = (
   pt1: { latitude: number; longitude: number },

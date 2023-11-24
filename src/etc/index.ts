@@ -1,1 +1,1 @@
-export * from './etc';
+export * from './etc.js';
